@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../dist/css/video-js.min.css"/>
+
+    <script src="../dist/js/videojs.bundle.js"></script>
+</head>
+<body>
+<div>
+    <video id="player" class="video-js vjs-default-skin" controls preload="none" width="640" height="400"
+      data-setup='{"techOrder" : ["hlsJs", "hls", "html5", "flash"]}' >
+      <source src="http://playertest.longtailvideo.com/adaptive/bbbfull/bbbfull.m3u8" type="application/x-mpegURL" />
+      <track src="jellies.srt" kind="captions" srclang="en" label="English" />
+    </video>
+</div>
+
+</body>
+</html>
